@@ -5,8 +5,12 @@
              xmlns:views="clr-namespace:Yggdrasil.Pages"
              x:Class="Yggdrasil.MainPage">
 
-    <views:LogInPage Title="Log In Page"/>
-    <views:UserPage Title="User Page"/>
+    <views:MyProfile Title="My Profile"/>
+    <views:Ambitions Title="Ambitions"/>
+    <views:Experiences Title="Experiences"/>
+    <views:CV Title="CV"/>
+    
+    
 
 
 </TabbedPage>
