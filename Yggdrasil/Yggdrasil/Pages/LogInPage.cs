@@ -6,5 +6,6 @@ namespace Yggdrasil.Pages
 {
     class LogInPage
     {
+        private string test;
     }
 }
