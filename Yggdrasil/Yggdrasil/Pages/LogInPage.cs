@@ -6,14 +6,5 @@ namespace Yggdrasil.Pages
 {
     class LogInPage
     {
-<<<<<<< HEAD
-        private int hei;
-=======
-<<<<<<< HEAD
-        private string test;
-=======
-        
->>>>>>> 10b085f18b3aa169ccf353350c751544e0683ce4
->>>>>>> 91b122b00054fc7ec57bc07c67039455f9de56ea
     }
 }
