@@ -3,37 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yggdrasil.Pages.MyProfile">
     <ContentPage.Content>
-<<<<<<< HEAD
-        <StackLayout>
-=======
         <StackLayout BackgroundColor="AliceBlue">
->>>>>>> 71a43ade54e5689c6efe855814507b77d5cdd132
-            <Label Text="Welcome to MyProfile!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="Center" />
-            <Button Text="Personal info" HorizontalOptions="Center"/>
-            <Button Text="Picture" HorizontalOptions="Center" />
-<<<<<<< HEAD
-
-        <StackLayout BackgroundColor="AliceBlue">
-=======
->>>>>>> 71a43ade54e5689c6efe855814507b77d5cdd132
             <Label Text="My Profil" TextColor="Black" FontSize="20"
                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Label>
-                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
-                    <BoxView HorizontalOptions="CenterAndExpand"></BoxView>
-                    <Label TextColor="Black" Text="Forfatter, årstall og sidetall skal oppgis i parentes: 
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+                <BoxView HorizontalOptions="CenterAndExpand"></BoxView>
+                <Label TextColor="Black" Text="Forfatter, årstall og sidetall skal oppgis i parentes: 
                        Eksempel: (Jansen, 2014, s. 99) 
                        Finnes ikke sidetall, kan avsnitt og/eller andre inndelinger brukes. 
                        Eksempel: (Hansen, 2011, kap. 5, avsn. 3) 
                        (Psykisk helsevernloven, 1999, § 3-3)"></Label>
-                </StackLayout>
             </StackLayout>
-<<<<<<< HEAD
-=======
-            <Button TextColor="Black" BackgroundColor="DimGray" Text="Edit your info" Margin="20">
-            </Button>
->>>>>>> 71a43ade54e5689c6efe855814507b77d5cdd132
+            <Button TextColor="Black" BackgroundColor="DimGray" Text="Edit your info" Margin="20"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
