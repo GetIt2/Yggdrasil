@@ -4,6 +4,11 @@
              x:Class="Yggdrasil.Pages.MyProfile">
     <ContentPage.Content>
         <StackLayout BackgroundColor="AliceBlue">
+            <Label Text="Welcome to MyProfile!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="Center" />
+            <Button Text="Personal info" HorizontalOptions="Center"/>
+            <Button Text="Picture" HorizontalOptions="Center" />
             <Label Text="My Profil" TextColor="Black" FontSize="20"
                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Label>
             <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
@@ -14,7 +19,8 @@
                        Eksempel: (Hansen, 2011, kap. 5, avsn. 3) 
                        (Psykisk helsevernloven, 1999, § 3-3)"></Label>
             </StackLayout>
-            <Button TextColor="Black" BackgroundColor="DimGray" Text="Edit your info" Margin="20"></Button>
+            <Button TextColor="Black" BackgroundColor="DimGray" Text="Edit your info" Margin="20">
+            </Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -3,11 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yggdrasil.Pages.CV">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to CV!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Add document" HorizontalOptions="CenterAndExpand"></Button>
+        <StackLayout VerticalOptions="CenterAndExpand" 
+                     HorizontalOptions="CenterAndExpand">
+            <Label Text="Upload a CV document here"/>
+            <Button Text="Add document" HorizontalOptions="CenterAndExpand"/>
 
         </StackLayout>
     </ContentPage.Content>
