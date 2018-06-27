@@ -14,6 +14,7 @@
                        Eksempel: (Hansen, 2011, kap. 5, avsn. 3) 
                        (Psykisk helsevernloven, 1999, § 3-3)"></Label>
             </StackLayout>
+            <Button TextColor="Black" BackgroundColor="DimGray" Text="Edit your info" Margin="20"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
