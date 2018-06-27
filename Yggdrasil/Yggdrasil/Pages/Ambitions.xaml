@@ -10,7 +10,7 @@
                    VerticalOptions="Start" 
                    HorizontalOptions="CenterAndExpand" 
                    Margin="60"/>
-            <Button Text="+" HorizontalOptions="End" WidthRequest="50"
+            <Button Text="Add new" HorizontalOptions="Start" WidthRequest="50"
                     Margin="10"/>
             <ScrollView BackgroundColor="White"
                         VerticalOptions="FillAndExpand"
