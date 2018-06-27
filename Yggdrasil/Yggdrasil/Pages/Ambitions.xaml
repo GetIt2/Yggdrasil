@@ -2,13 +2,31 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yggdrasil.Pages.Ambitions">
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Ambitions!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
-            <Button Text="See ambition" HorizontalOptions="CenterAndExpand"></Button>
+            <Label Text="Ambitions"
+                   FontSize="50"
+                   VerticalOptions="Start" 
+                   HorizontalOptions="CenterAndExpand" 
+                   Margin="60"/>
+            <Button Text="Add new" HorizontalOptions="Start" WidthRequest="50"
+                    Margin="10"/>
+            <ScrollView BackgroundColor="White"
+                        VerticalOptions="FillAndExpand"
+                        Margin="10">
+                <StackLayout>
+                    <Button Text="1"/>
+                    <Button Text="2"/>
+                    <Button Text="3"/>
+                    <Button Text="4"/>
+                    <Button Text="5"/>
+                    <Button Text="6"/>
+                    <Button Text="7"/>
+                    <Button Text="8"/>
+                    <Button Text="9"/>
+                </StackLayout>
+            </ScrollView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
