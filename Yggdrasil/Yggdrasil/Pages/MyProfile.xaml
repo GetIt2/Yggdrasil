@@ -3,11 +3,26 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yggdrasil.Pages.MyProfile">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to MyProfile!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-            <Button FontSize="Large" BackgroundColor="SpringGreen" Text="Personal info" HorizontalOptions="CenterAndExpand"></Button>
+        <StackLayout BackgroundColor="AliceBlue">
+            <Label Text="My Profil" TextColor="Black" FontSize="20"
+                   HorizontalOptions="Center" Margin="20"></Label>
+            <ProgressBar></ProgressBar>
+            <StackLayout>
+                <BoxView HorizontalOptions="CenterAndExpand"></BoxView>
+                <Label Text="Forfatter, årstall og sidetall skal oppgis i parentes:
+
+Eksempel:
+
+(Jansen, 2014, s. 99)
+
+Finnes ikke sidetall, kan avsnitt og/eller andre inndelinger brukes.
+
+Eksempel:
+
+(Hansen, 2011, kap. 5, avsn. 3)
+
+(Psykisk helsevernloven, 1999, § 3-3)"></Label>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
