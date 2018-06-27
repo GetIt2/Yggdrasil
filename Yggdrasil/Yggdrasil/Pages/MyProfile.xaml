@@ -7,7 +7,8 @@
             <Label Text="Welcome to MyProfile!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button FontSize="Large" BackgroundColor="SpringGreen" Text="Personal info" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Personal info" HorizontalOptions="CenterAndExpand" />
+            <Button Text="Picture" HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -4,9 +4,11 @@
              x:Class="Yggdrasil.Pages.CV">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to CV!"/>
-            <Button BackgroundColor="SpringGreen" Text="Add document" HorizontalOptions="CenterAndExpand"></Button>
-            
+            <Label Text="Welcome to CV!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Add document" HorizontalOptions="CenterAndExpand"></Button>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

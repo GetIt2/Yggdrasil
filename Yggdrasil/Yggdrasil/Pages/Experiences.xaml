@@ -7,8 +7,8 @@
             <Label Text="Welcome to Experiences!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-            <Button BackgroundColor="SpringGreen" Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
-            <Button BackgroundColor="SpringGreen" Text="Document" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Document" HorizontalOptions="CenterAndExpand"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
