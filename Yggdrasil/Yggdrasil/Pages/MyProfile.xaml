@@ -4,16 +4,38 @@
              x:Class="Yggdrasil.Pages.MyProfile">
     <ContentPage.Content>
         <StackLayout BackgroundColor="AliceBlue">
-            <Label Text="My Profil" TextColor="Black" FontSize="20"
+            <Label Text="My Profil" TextColor="Black" FontSize="30"
                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Label>
-            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
-                <BoxView HorizontalOptions="CenterAndExpand"></BoxView>
-                <Label TextColor="Black" Text="Forfatter, årstall og sidetall skal oppgis i parentes: 
-                       Eksempel: (Jansen, 2014, s. 99) 
-                       Finnes ikke sidetall, kan avsnitt og/eller andre inndelinger brukes. 
-                       Eksempel: (Hansen, 2011, kap. 5, avsn. 3) 
-                       (Psykisk helsevernloven, 1999, § 3-3)"></Label>
-            </StackLayout>
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="20,0" RowSpacing="20" ColumnSpacing="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="80" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <BoxView HorizontalOptions="StartAndExpand" Grid.Row="0" Grid.Column="0"/>
+                <Label TextColor="Black" HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1">
+                    <Label.Text>
+Navn: Ola Nordmann
+Fødselsdato: 01.01.70
+Adresse: Strandgata 1 0001 Oslo
+Telefonnummer: 123 45 678
+E-post: ola.nordmann70@example.com
+                    </Label.Text>
+                </Label>
+                <Label TextColor="Black" HorizontalOptions="FillAndExpand" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+                    <Label.Text>
+2 års erfaring som pedagogisk leder i barnehage.
+Personlig utvikling: Ledelse, administrasjon og tilrettelegging for barn og ansatte.
+Vi opplevde en periode med store bemanningsproblemer på jobb, og det var en utfordring for meg som leder. Jeg måtte lære å takle stress og se etter gode løsninger for alle parter i en vanskelig situasjon.
+Årsvikariat som kontormedarbeider.
+Personlig utvikling: Kundebehandling, kommunikasjon og juridisk arbeid opp mot gjeldende lover og regler
+Personlig utvikling: Holde foredrag og snakke foran grupper.
+                    </Label.Text>
+                </Label>
+            </Grid>
             <Button TextColor="Black" BackgroundColor="DimGray" Text="Edit your info" Margin="20"/>
         </StackLayout>
     </ContentPage.Content>
