@@ -9,8 +9,6 @@
     <views:Ambitions Title="Ambitions"/>
     <views:Experiences Title="Experiences"/>
     <views:CV Title="CV"/>
-    
-    
-
+    <views:LogInPage Title="LogIn"/>
 
 </TabbedPage>

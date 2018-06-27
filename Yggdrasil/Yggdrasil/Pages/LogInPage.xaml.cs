@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Yggdrasil.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class UserPage : ContentPage
+	public partial class LogInPage : ContentPage
 	{
-		public UserPage ()
+		public LogInPage ()
 		{
 			InitializeComponent ();
 		}
