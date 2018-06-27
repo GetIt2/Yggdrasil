@@ -8,7 +8,11 @@
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
             <Button Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
-            <Button Text="Document" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Add new" HorizontalOptions="CenterAndExpand"></Button>
+            <Button Text="Document" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"></Button>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
