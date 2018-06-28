@@ -54,7 +54,7 @@ namespace Yggdrasil.Pages
             var emailLabel = new Label { Text = "Epost:"};
             var emailEntry = new Entry {Keyboard = Keyboard.Email, HorizontalOptions = LayoutOptions.FillAndExpand };
             var extendedInfoLabel = new Label { Text = "Kort om deg selv:"};
-            var extendedInfoEntry = new Entry { MaxLength = 140, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };
+            var extendedInfoEditor = new Editor { MaxLength = 140, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };
 
             Content = new StackLayout
             {
@@ -86,7 +86,8 @@ namespace Yggdrasil.Pages
                         Orientation = StackOrientation.Horizontal,
                         Children ={ emailLabel, emailEntry}
                     },
-                    extendedInfoLabel, extendedInfoEntry
+                    extendedInfoLabel, extendedInfoEditor,
+                    new Button(){Text = "Save", Command = new Command(ShowMyProfilePage)}
                 }
             };
         }
@@ -104,13 +105,13 @@ namespace Yggdrasil.Pages
             {
                 TextColor = Color.Black,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                //Text = getBasicInfo()
+                Text = GetBasicInfo()
             };
             var gridExtendedInfo = new Label
             {
                 TextColor = Color.Black,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                //Text = getExtendedInfo()
+                Text = GetExtendedInfo()
             };
 
             gridView.Children.Add(gridPicture, 0, 0);
@@ -118,6 +119,25 @@ namespace Yggdrasil.Pages
             gridView.Children.Add(gridExtendedInfo, 0, 1);
             Grid.SetColumnSpan(gridExtendedInfo, 2);
             return gridView;
+        }
+
+        private static string GetBasicInfo()
+        {
+            var text = "Navn: Ola Nordman" +
+                       "Fødselsdag: 01.01.1970" +
+                       "Adressa: Startgata 1 0001 Oslo" +
+                       "Telefon nummer: 12345678" +
+                       "Epost: ola.nordmann@example.com";
+            return text;
+
+        }
+
+        private static string GetExtendedInfo()
+        {
+            var text =
+                "Jeg er en mann på 48, ugift og kommer opprinnelig fra landet, men har flyttet til Oslo for å studere. Jeg har nå fullført mine studier. Utdannelsen min inneholder elementer som salg og kundebehandling, samt en del markedsføring." +
+                "De som kjenner meg vil sannsynligvis si at jeg er svært målbevisst, selvstendig, og initiativrik.I tillegg når jeg som regel de mål jeg har satt meg, og er født med godt humør og har positiv innstilling.";
+            return text;
         }
     }
 }
