@@ -21,15 +21,33 @@ namespace Yggdrasil.Pages
 	            VerticalOptions = LayoutOptions.Start,
 	            HorizontalOptions = LayoutOptions.CenterAndExpand,
 	            Margin = 60
-	        };
-	        var addButton = new Button()
+	        }; 
+            var addButton = new Button()
 	        {
 	            Text = "Add new",
-	            HorizontalOptions = LayoutOptions.Start,
+	            HorizontalOptions = LayoutOptions.StartAndExpand,
 	            Margin = 10,
 	            Command = new Command(AddExperience)
 	        };
-	        var scrollingExperience = new ScrollView()
+            var addDocumentation = new Button()
+            {
+                Text = "Document",
+                HorizontalOptions = LayoutOptions.EndAndExpand,
+                Margin = 10,
+                Command = new Command(AddDocumentation)
+            };
+	        var anotherStack = new StackLayout()
+	        {
+	            Margin = 20,
+	            Orientation = StackOrientation.Horizontal,
+	            VerticalOptions = LayoutOptions.FillAndExpand,
+	            Children =
+	            {
+	                addButton,
+                    addDocumentation
+	            }
+	        };
+            var scrollingExperience = new ScrollView()
 	        {
 	            BackgroundColor = Color.DarkGray,
 	            VerticalOptions = LayoutOptions.FillAndExpand,
@@ -40,18 +58,113 @@ namespace Yggdrasil.Pages
 	            Children =
 	            {
 	                header,
-	                addButton,
+                    anotherStack,
 	                scrollingExperience
 	            }
 	        };
 	        scrollingExperience.Content = GetExperiences();
 	    }
 
-	    private void AddExperience()
+	    private void AddDocumentation()
 	    {
 	        var header = new Label()
 	        {
-	            Text = "Add new experience",
+	            Text = "Document",
+	            Margin = 60,
+	            HorizontalOptions = LayoutOptions.CenterAndExpand,
+	            FontSize = 31
+	        };
+	        var addButtonExp = new Button()
+	        {
+	            Text = "Exp to doc",
+	            Command = new Command(ExperienceMain)
+	        };
+	        var addDocumentation = new Button()
+	        {
+	            Text = "Add Documentation",
+	            Command = new Command(AddDocumentations)
+	        };
+            var addFields = new StackLayout()
+	        {
+	            Margin = 20,
+	            VerticalOptions = LayoutOptions.FillAndExpand,
+	            Children =
+	            {
+	                
+	            }
+	        };
+	        Content = new StackLayout()
+	        {
+	            Children =
+	            {
+	                header,
+	                addButtonExp,
+	                addDocumentation,
+	                addFields,
+                }
+
+	        };
+        }
+
+	    private void AddDocumentations()
+	    {
+	        var header = new Label()
+	        {
+	            Text = "Document",
+	            Margin = 60,
+	            HorizontalOptions = LayoutOptions.CenterAndExpand,
+	            FontSize = 31
+	        };
+	        var goBack = new Button()
+	        {
+	            Text = "Back",
+	            Command = new Command(AddDocumentation)
+	        };
+	        var addPicture = new Button()
+	        {
+	            Text = "Picture",
+	            Command = new Command(AddDocumentation)
+	        };
+	        var addVideo = new Button()
+	        {
+	            Text = "Video",
+	            Command = new Command(AddDocumentation)
+	        };
+	        var addRef = new Button()
+	        {
+	            Text = "Reference",
+	            Command = new Command(AddDocumentation)
+	        };
+	        var addLinks = new Button()
+	        {
+	            Text = "Links",
+	            Command = new Command(AddDocumentation)
+	        };
+	        var addDiplomas = new Button()
+	        {
+	            Text = "Diplomas",
+	            Command = new Command(AddDocumentation)
+	        };
+            Content = new StackLayout()
+	        {
+	            Children =
+	            {
+	                header,
+	                addPicture,
+	                addVideo,
+	                addRef,
+	                addLinks,
+	                addDiplomas,
+                    goBack
+                }
+	        };
+        }
+
+        private void AddExperience()
+	    {
+	        var header = new Label()
+	        {
+	            Text = "Add new experiences",
 	            Margin = 60,
 	            HorizontalOptions = LayoutOptions.CenterAndExpand,
 	            FontSize = 31
