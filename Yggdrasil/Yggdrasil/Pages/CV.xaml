@@ -5,9 +5,7 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="CenterAndExpand" 
                      HorizontalOptions="CenterAndExpand">
-            <Label Text="Upload a CV document here"/>
-            <Button Text="Add document" HorizontalOptions="CenterAndExpand"/>
-
+            <Label Text="CV here"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
