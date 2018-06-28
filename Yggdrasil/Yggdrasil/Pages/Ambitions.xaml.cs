@@ -16,7 +16,7 @@ namespace Yggdrasil.Pages
 		{
 			InitializeComponent ();
 
-		    ViewAmbitionMainPage();
+		   // ViewAmbitionMainPage();
 		}
 
 	    private void ViewAmbitionMainPage()
@@ -33,7 +33,8 @@ namespace Yggdrasil.Pages
             {
                 Text = "Add new",
                 HorizontalOptions = LayoutOptions.Start,
-                Margin = 10
+                Margin = 10,
+                Command = new Command(AddAmbition)
             };
             var scrollingAmbitions = new ScrollView()
             {
@@ -53,10 +54,15 @@ namespace Yggdrasil.Pages
 	        scrollingAmbitions.Content = GetAmbitions();
 	    }
 
+	    private void AddAmbition()
+	    {
+	        
+	    }
+
 	    private StackLayout GetAmbitions()
 	    {
 	        var ambitions = new StackLayout();
-	        var numberOfAmbitions = 10;
+	        var numberOfAmbitions = 100;
 
 	        for (int i = 0; i < numberOfAmbitions; i++)
 	        {

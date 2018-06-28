@@ -4,5 +4,8 @@
              x:Class="Yggdrasil.Pages.Ambitions">
 
     <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Add new ambition"/>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
