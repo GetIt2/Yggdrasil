@@ -4,7 +4,7 @@
              x:Class="Yggdrasil.Pages.MyProfile">
     <ContentPage.Content>
         <StackLayout BackgroundColor="AliceBlue">
-            <Label Text="My Profil" TextColor="Black" FontSize="30"
+            <Label Text="My Profile" TextColor="Black" FontSize="30"
                    HorizontalOptions="Center" VerticalOptions="CenterAndExpand"></Label>
             <Grid HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="20,0" RowSpacing="20" ColumnSpacing="5">
                 <Grid.RowDefinitions>
