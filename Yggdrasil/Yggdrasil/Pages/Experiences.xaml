@@ -2,35 +2,4 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Yggdrasil.Pages.Experiences">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Experiences"
-                   FontSize="45"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" 
-                   Margin="60"/>
-            <StackLayout Orientation="Horizontal" Margin="10">
-            <Button Text="Add new" 
-                    HorizontalOptions="StartAndExpand"></Button>
-            <Button Text="Document" 
-                    HorizontalOptions="End" 
-                    VerticalOptions="CenterAndExpand"></Button>
-                </StackLayout>
-            <ScrollView BackgroundColor="White"
-                        VerticalOptions="FillAndExpand"
-                        Margin="10">
-                <StackLayout>
-                    <Button Text="1"/>
-                    <Button Text="2"/>
-                    <Button Text="3"/>
-                    <Button Text="4"/>
-                    <Button Text="5"/>
-                    <Button Text="6"/>
-                    <Button Text="7"/>
-                    <Button Text="8"/>
-                    <Button Text="9"/>
-                </StackLayout>
-            </ScrollView>
-        </StackLayout>
-    </ContentPage.Content>
 </ContentPage>
