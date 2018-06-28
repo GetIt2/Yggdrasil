@@ -9,7 +9,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Images\empty-profile-grey.jpg" />
+    <EmbeddedResource Include="Images\empty-profile-grey.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>

@@ -43,17 +43,17 @@ namespace Yggdrasil.Pages
 
         public void EditMyProfile()
         {
-            var nameLabel = new Label { Text = "Navn:"};
-            var nameEntry = new Entry { HorizontalOptions = LayoutOptions.FillAndExpand};
-            var birthdayLabel = new Label { Text = "Fødselsdag:"};
+            var nameLabel = new Label { Text = "Navn:" };
+            var nameEntry = new Entry { HorizontalOptions = LayoutOptions.FillAndExpand };
+            var birthdayLabel = new Label { Text = "Fødselsdag:" };
             var birthdayEntry = new Entry { Keyboard = Keyboard.Numeric, HorizontalOptions = LayoutOptions.FillAndExpand };
-            var adressLabel = new Label { Text = "Adresse:"};
+            var adressLabel = new Label { Text = "Adresse:" };
             var adressEntry = new Entry { HorizontalOptions = LayoutOptions.FillAndExpand };
-            var phoneLabel = new Label { Text = "Telefonnummer:"};
+            var phoneLabel = new Label { Text = "Telefonnummer:" };
             var phoneEntry = new Entry { Keyboard = Keyboard.Telephone, HorizontalOptions = LayoutOptions.FillAndExpand };
-            var emailLabel = new Label { Text = "Epost:"};
-            var emailEntry = new Entry {Keyboard = Keyboard.Email, HorizontalOptions = LayoutOptions.FillAndExpand };
-            var extendedInfoLabel = new Label { Text = "Kort om deg selv:"};
+            var emailLabel = new Label { Text = "Epost:" };
+            var emailEntry = new Entry { Keyboard = Keyboard.Email, HorizontalOptions = LayoutOptions.FillAndExpand };
+            var extendedInfoLabel = new Label { Text = "Kort om deg selv:" };
             var extendedInfoEditor = new Editor { MaxLength = 140, VerticalOptions = LayoutOptions.FillAndExpand, HorizontalOptions = LayoutOptions.FillAndExpand };
 
             Content = new StackLayout
@@ -94,24 +94,23 @@ namespace Yggdrasil.Pages
 
         private static Grid GetGridView()
         {
-            var gridView = new Grid { ColumnSpacing = 5, RowSpacing = 20, VerticalOptions = LayoutOptions.FillAndExpand};
+            var gridView = new Grid { ColumnSpacing = 5, RowSpacing = 20, VerticalOptions = LayoutOptions.FillAndExpand };
             gridView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Auto) });
             gridView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             gridView.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
             gridView.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
 
-            var gridPicture = new BoxView { HorizontalOptions = LayoutOptions.StartAndExpand };
-            var gridBasicInfo = new Label
+            var gridPicture = new Image()
             {
-                TextColor = Color.Black,
-                HorizontalOptions = LayoutOptions.FillAndExpand,
-                Text = GetBasicInfo()
+                Source = ImageSource.FromResource("Yggdrasil.Images.empty-profile-grey.jpg")
             };
+            var gridBasicInfo = GetBasicInfo();
             var gridExtendedInfo = new Label
             {
                 TextColor = Color.Black,
                 HorizontalOptions = LayoutOptions.FillAndExpand,
-                Text = GetExtendedInfo()
+                Text = GetExtendedInfo(),
+                Margin = 10
             };
 
             gridView.Children.Add(gridPicture, 0, 0);
@@ -121,14 +120,34 @@ namespace Yggdrasil.Pages
             return gridView;
         }
 
-        private static string GetBasicInfo()
+        private static StackLayout GetBasicInfo()
         {
-            var text = "Navn: Ola Nordman" +
-                       "Fødselsdag: 01.01.1970" +
-                       "Adressa: Startgata 1 0001 Oslo" +
-                       "Telefon nummer: 12345678" +
-                       "Epost: ola.nordmann@example.com";
-            return text;
+            var infostack = new StackLayout();
+            var initLabels = new Label[5];
+            for (int i = 0; i < initLabels.Length; i++)
+            {
+                initLabels[i] = new Label()
+                {
+                    TextColor = Color.Black
+                };
+            }
+
+            var name = initLabels[0];
+            var birthday = initLabels[1];
+            var adress = initLabels[2];
+            var phone = initLabels[3];
+            var email = initLabels[4];
+            name.Text = "Navn: Ola Nordman";
+            birthday.Text = "Fødselsdag: 01.01.1970";
+            adress.Text = "Adressa: Startgata 1 0001 Oslo";
+            phone.Text = "Telefon nummer: 12345678";
+            email.Text = "Epost: ola.nordmann@example.com";
+            infostack.Children.Add(name);
+            infostack.Children.Add(birthday);
+            infostack.Children.Add(adress);
+            infostack.Children.Add(phone);
+            infostack.Children.Add(email);
+            return infostack;
 
         }
 
