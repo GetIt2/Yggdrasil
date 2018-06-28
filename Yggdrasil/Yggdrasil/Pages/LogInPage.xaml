@@ -5,12 +5,15 @@
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center"
                      VerticalOptions="CenterAndExpand">
+            <Button Text="Log in with Linkedin"
+                   HorizontalOptions="Center"
+                   WidthRequest="200"/>
             <Entry Placeholder="UserName"
                    HorizontalOptions="Center"
                    WidthRequest="150"/>
             <Entry Placeholder="Password" IsPassword="True" WidthRequest="150"
                    HorizontalOptions="Center"/>
-            <Button Text="Log in"/>
+            <Button Text="Log in" TextColor="Black" BackgroundColor="DimGray"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
