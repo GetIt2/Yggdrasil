@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace Yggdrasil.Pages
@@ -15,6 +9,26 @@ namespace Yggdrasil.Pages
 		public CV ()
 		{
 			InitializeComponent ();
+            CVPage();
 		}
+
+	    
+	    private void CVPage()
+	    {
+	        var picture = new Image()
+	        {
+                VerticalOptions = LayoutOptions.FillAndExpand,
+	            Source = ImageSource.FromResource("Yggdrasil.Images.cv-example.jpg")
+            };
+	        Content = new StackLayout()
+	        {
+	            HorizontalOptions = LayoutOptions.Center,
+	            Children =
+	            {
+	                picture
+	            }
+
+	        };
+        }
 	}
 }
