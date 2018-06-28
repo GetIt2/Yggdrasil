@@ -94,7 +94,7 @@ namespace Yggdrasil.Pages
 
         private static Grid GetGridView()
         {
-            var gridView = new Grid { ColumnSpacing = 5, RowSpacing = 20 };
+            var gridView = new Grid { ColumnSpacing = 5, RowSpacing = 20, VerticalOptions = LayoutOptions.FillAndExpand};
             gridView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             gridView.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             gridView.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1, GridUnitType.Star) });
