@@ -11,8 +11,7 @@ namespace Yggdrasil.Pages
 			InitializeComponent ();
             CVPage();
 		}
-
-	    
+        
 	    private void CVPage()
 	    {
 	        var picture = new Image()
