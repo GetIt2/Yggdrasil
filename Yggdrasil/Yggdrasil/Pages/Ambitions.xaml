@@ -4,19 +4,5 @@
              x:Class="Yggdrasil.Pages.Ambitions">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Add new ambition"
-                   Margin="60"
-                   HorizontalOptions="CenterAndExpand"
-                   FontSize="31"/>
-            <StackLayout Margin="20" VerticalOptions="FillAndExpand">
-                <Entry Placeholder="Ambition"/>
-                <Label Text="Description" Margin="4"
-                       FontSize="17"/>
-                <Editor BackgroundColor="AntiqueWhite"
-                        VerticalOptions="FillAndExpand"/>
-                <Button Text="Add"/>
-            </StackLayout>
-        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
