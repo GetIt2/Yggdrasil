@@ -4,29 +4,5 @@
              x:Class="Yggdrasil.Pages.Ambitions">
 
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Ambitions"
-                   FontSize="50"
-                   VerticalOptions="Start" 
-                   HorizontalOptions="CenterAndExpand" 
-                   Margin="60"/>
-            <Button Text="Add new" HorizontalOptions="Start"
-                    Margin="10"/>
-            <ScrollView BackgroundColor="White"
-                        VerticalOptions="FillAndExpand"
-                        Margin="10">
-                <StackLayout>
-                    <Button Text="1"/>
-                    <Button Text="2"/>
-                    <Button Text="3"/>
-                    <Button Text="4"/>
-                    <Button Text="5"/>
-                    <Button Text="6"/>
-                    <Button Text="7"/>
-                    <Button Text="8"/>
-                    <Button Text="9"/>
-                </StackLayout>
-            </ScrollView>
-        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
