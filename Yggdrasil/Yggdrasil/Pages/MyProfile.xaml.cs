@@ -18,7 +18,6 @@ namespace Yggdrasil.Pages
 
             Content = new StackLayout()
             {
-                BackgroundColor = Color.AliceBlue,
                 Children =
                 {
                     new Label()

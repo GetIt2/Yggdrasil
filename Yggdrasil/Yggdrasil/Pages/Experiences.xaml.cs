@@ -55,7 +55,7 @@ namespace Yggdrasil.Pages
 	        };
 	        Content = new StackLayout()
 	        {
-	            Children =
+                Children =
 	            {
 	                header,
                     anotherStack,
@@ -76,14 +76,18 @@ namespace Yggdrasil.Pages
 	        };
 	        var addButtonExp = new Button()
 	        {
-	            Text = "Exp to doc",
-	            Command = new Command(ExperienceMain)
-	        };
+	            Text = "Experience to document",
+	            Command = new Command(ExperienceMain),
+	            BackgroundColor = Color.LightGray,
+	            BorderColor = Color.Black,
+            };
 	        var addDocumentation = new Button()
 	        {
 	            Text = "Add Documentation",
-	            Command = new Command(AddDocumentations)
-	        };
+	            Command = new Command(AddDocumentations),
+	            BackgroundColor = Color.LightGray,
+	            BorderColor = Color.Black,
+            };
             var addFields = new StackLayout()
 	        {
 	            Margin = 20,
@@ -95,7 +99,8 @@ namespace Yggdrasil.Pages
 	        };
 	        Content = new StackLayout()
 	        {
-	            Children =
+	            HorizontalOptions = LayoutOptions.Center,
+                Children =
 	            {
 	                header,
 	                addButtonExp,
@@ -118,35 +123,48 @@ namespace Yggdrasil.Pages
 	        var goBack = new Button()
 	        {
 	            Text = "Back",
-	            Command = new Command(AddDocumentation)
+	            Command = new Command(AddDocumentation),
+                BackgroundColor = Color.LightGray,
+                BorderColor = Color.Black,
 	        };
 	        var addPicture = new Button()
 	        {
 	            Text = "Picture",
-	            Command = new Command(AddDocumentation)
-	        };
+	            Command = new Command(AddDocumentation),
+	            BackgroundColor = Color.LightGray,
+	            BorderColor = Color.Black,
+            };
 	        var addVideo = new Button()
 	        {
 	            Text = "Video",
-	            Command = new Command(AddDocumentation)
-	        };
+	            Command = new Command(AddDocumentation),
+	            BackgroundColor = Color.LightGray,
+	            BorderColor = Color.Black,
+            };
 	        var addRef = new Button()
 	        {
 	            Text = "Reference",
-	            Command = new Command(AddDocumentation)
-	        };
+	            Command = new Command(AddDocumentation),
+	            BackgroundColor = Color.LightGray,
+	            BorderColor = Color.Black,
+            };
 	        var addLinks = new Button()
 	        {
 	            Text = "Links",
-	            Command = new Command(AddDocumentation)
-	        };
+	            Command = new Command(AddDocumentation),
+	            BackgroundColor = Color.LightGray,
+	            BorderColor = Color.Black,
+            };
 	        var addDiplomas = new Button()
 	        {
 	            Text = "Diplomas",
-	            Command = new Command(AddDocumentation)
-	        };
+	            Command = new Command(AddDocumentation),
+	            BackgroundColor = Color.LightGray,
+	            BorderColor = Color.Black,
+            };
             Content = new StackLayout()
 	        {
+                HorizontalOptions = LayoutOptions.Center,
 	            Children =
 	            {
 	                header,
@@ -191,7 +209,8 @@ namespace Yggdrasil.Pages
 	        var addFields = new StackLayout()
 	        {
 	            Margin = 20,
-	            VerticalOptions = LayoutOptions.FillAndExpand,
+	            HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.FillAndExpand,
 	            Children =
 	            {
 	                experienceEntry,
@@ -201,7 +220,8 @@ namespace Yggdrasil.Pages
 	        };
 	        Content = new StackLayout()
 	        {
-	            Children =
+	            HorizontalOptions = LayoutOptions.Center,
+                Children =
 	            {
 	                header,
 	                addFields,
